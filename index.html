@@ -3,61 +3,71 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>IMPORTANT NOTICE!</title>
+    <title>You're My Sunshine</title>
     <style>
         body {
-            background-color: #fff5e6;
-            font-family: 'Arial', sans-serif;
-            text-align: center;
-            padding: 50px;
+            font-family: Arial, sans-serif;
+            background-color: #fdf5e6;
             color: #333;
+            text-align: center;
+            margin: 0;
+            padding: 20px;
         }
         h1 {
-            color: #ff6347;
+            color: #ff69b4;
+            font-size: 3em;
         }
-        .button {
-            background-color: #ff6347;
-            color: white;
-            border: none;
-            padding: 15px 30px;
+        p {
             font-size: 1.2em;
-            cursor: pointer;
-            border-radius: 5px;
-            margin: 20px;
+            margin: 10px 0;
         }
-        .button:hover {
-            background-color: #ff4500;
+        .heart {
+            color: #ff1493;
+            font-size: 2em;
+            animation: heartbeat 1.5s infinite;
         }
-        .message {
-            font-size: 1.5em;
+        @keyframes heartbeat {
+            0% { transform: scale(1); }
+            25% { transform: scale(1.1); }
+            50% { transform: scale(1); }
+            75% { transform: scale(1.1); }
+            100% { transform: scale(1); }
+        }
+        .sunshine {
+            font-size: 2.5em;
+            color: #ffd700;
+            animation: shine 2s infinite;
+        }
+        @keyframes shine {
+            0% { text-shadow: 0 0 5px #ffd700; }
+            50% { text-shadow: 0 0 20px #ffd700; }
+            100% { text-shadow: 0 0 5px #ffd700; }
+        }
+        .btn {
+            display: inline-block;
             margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #ff69b4;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 1.2em;
+            transition: background-color 0.3s;
         }
-        .error-message {
-            display: none;
-            color: red;
-            font-weight: bold;
+        .btn:hover {
+            background-color: #ff1493;
         }
     </style>
 </head>
 <body>
-
-    <h1>Surprise!</h1>
-    <p>Hannuuuuuu! are looking cute today🫶</p>
-        <p>Click the button to see something unexpected... 😁</p>
-
-    <button class="button" onclick="showError()">Click Me!</button>
-    
-    <p id="errorMessage" class="error-message">Oops! Something went wrong. 😱</p>
-    <p id="sweetMessage" class="mess    age" style="display: none;">Just kidding! You're amazing, and I love you! ❤️</p>
-
-    <script>
-        function showError() {
-            document.getElementById('errorMessage').style.display = 'block';
-            setTimeout(function() {
-                document.getElementById('errorMessage').style.display = 'none';
-                document.getElementById('sweetMessage').style.display = 'block';
-            }, 2000); // Error message lasts for 2 seconds
-        }
-    </script>
+    <h1><span class="sunshine">MYY MOMMMYYYYYYY!!</span></h1>
+    <p>Every time I see you, I cant help but imagine what we could be doing alone together 😉 <span class="heart">&hearts;</span></p>
+    <p>I feel somthing special every time I seeing you.</p>
+    <p>You dont have any idea how much i want you right know.🥹</p>
+    <p>Just thinking about you makes it harder.🤣🤣[just kidding you are soo sweet dude🫶🏼]</p>
+    <p>I've been thinking about youuu all day... and not in an innocent way.🤣</p>
+    <p>You're not just my Mommyyyy, you're my best friend, my sex expert 😂, and the most amazing person I know.</p>
+    <p>So, what do you say we make today as special as you are?</p>
+    <a href="https://www.womanandhome.com/health-wellbeing/best-standing-sex-positions/" class="btn">Click Here for a Surprise!</a>
 </body>
 </html>
